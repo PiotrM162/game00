@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\MainSpace">
+      <UniqueIdentifier>{cedd0fdc-8684-4e4b-b990-b679cbf4d6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\UIelements">
+      <UniqueIdentifier>{1a1a0ddd-9ac5-4473-9e4b-02e934eb0955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\UIelements\button">
+      <UniqueIdentifier>{cbb9c186-5edf-4d5f-b41e-865d28ad6b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\UIelements\textbox">
+      <UniqueIdentifier>{f6747565-ac64-4d55-8a3f-d35de820666b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\MainSpace\Controls">
+      <UniqueIdentifier>{f52f82e6-9f4e-454e-a4e5-cb3ce04869c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Renderer">
+      <UniqueIdentifier>{b99527f6-797f-4ee8-a004-1fa85ad2485a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\ResourceManager">
+      <UniqueIdentifier>{040c9a24-8638-451a-9f22-4a01b94e8194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\FieldsCollection">
+      <UniqueIdentifier>{a7af1bcd-4885-40ef-97d8-762be498ea7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Field">
+      <UniqueIdentifier>{81a3b84a-be20-4881-aa8c-4fe0d99d57c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\MainSpace\Toolbar">
+      <UniqueIdentifier>{1d719e60-cf76-4757-9e1e-aeb8ee775f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\MainSpace\InfoBar">
+      <UniqueIdentifier>{fbb9496a-539a-41c0-9857-3d27ff4181c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\ResourceManager\filesHandler">
+      <UniqueIdentifier>{a4fbd54c-1d77-4d68-847c-7942fe748bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\ResourceManager\projectData">
+      <UniqueIdentifier>{4fb6f8c8-d236-4c87-b8ce-98e2383719a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\FieldsCollection\CollectionHandler">
+      <UniqueIdentifier>{934917a3-0960-434f-ad46-1fccd82cafeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game00.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="MainSpace.cpp">
+      <Filter>Pliki źródłowe\MainSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>Pliki źródłowe\UIelements\button</Filter>
+    </ClCompile>
+    <ClCompile Include="textbox.cpp">
+      <Filter>Pliki źródłowe\UIelements\textbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Pliki źródłowe\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Pliki źródłowe\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Pliki źródłowe\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldsColletction.cpp">
+      <Filter>Pliki źródłowe\FieldsCollection</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls.cpp">
+      <Filter>Pliki źródłowe\MainSpace\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBar.cpp">
+      <Filter>Pliki źródłowe\MainSpace\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoBar.cpp">
+      <Filter>Pliki źródłowe\MainSpace\InfoBar</Filter>
+    </ClCompile>
+    <ClCompile Include="filesHandler.cpp">
+      <Filter>Pliki źródłowe\ResourceManager\filesHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectHandler.cpp">
+      <Filter>Pliki źródłowe\ResourceManager\projectData</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectionHandler.cpp">
+      <Filter>Pliki źródłowe\FieldsCollection\CollectionHandler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainSpace.h">
+      <Filter>Pliki źródłowe\MainSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>Pliki źródłowe\UIelements\button</Filter>
+    </ClInclude>
+    <ClInclude Include="textbox.h">
+      <Filter>Pliki źródłowe\UIelements\textbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Pliki źródłowe\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Pliki źródłowe\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Pliki źródłowe\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldsColletction.h">
+      <Filter>Pliki źródłowe\FieldsCollection</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls.h">
+      <Filter>Pliki źródłowe\MainSpace\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoBar.h">
+      <Filter>Pliki źródłowe\MainSpace\InfoBar</Filter>
+    </ClInclude>
+    <ClInclude Include="filesHandler.h">
+      <Filter>Pliki źródłowe\ResourceManager\filesHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBar.h">
+      <Filter>Pliki źródłowe\MainSpace\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectHandler.h">
+      <Filter>Pliki źródłowe\ResourceManager\projectData</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectionHandler.h">
+      <Filter>Pliki źródłowe\FieldsCollection\CollectionHandler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

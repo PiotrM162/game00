@@ -15,8 +15,8 @@ void ToolBar::Initialize(sf::Font& font)// seting elements and adding them to ma
 	button bt2("show hitboxes", { 138.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 10360.f, 9915.f });
 	button bt3("add sprite", { 126.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 9650.f, 9985.f });
 
-	button bt4("new project", { 120.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 9510.f, 9915.f });
-	button bt5("open project", { 120.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 9640.f, 9915.f });
+	button bt4("zapisz", { 120.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 9510.f, 9915.f });
+	button bt5("graj", { 120.f,36.f }, 18, sf::Color::Color(156, 156, 166, 255), sf::Color::Black, font, { 9640.f, 9915.f });
 
 	Buttons.insert({ "BtAdd", bt });
 	Buttons.insert({ "usun", bt00 });

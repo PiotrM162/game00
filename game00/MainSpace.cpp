@@ -2,6 +2,7 @@
 #include <iostream>
 #include "filesHandler.h"
 #include "CollectionHandler.h"
+#include "Game.h"
 
 void MainSpace::Core()
 {
@@ -153,6 +154,12 @@ void MainSpace::Core()
                 {
                     Chandler.saveCollection(Elements);
                     //projectHandler.CreateDirectoryTree("kurczak");
+                    break;
+                }
+                case BA_OpenProject:
+                {
+                    Game g(projectHandler);
+                    g.GameLoop();
                     break;
                 }
                 default:
@@ -651,8 +658,8 @@ void MainSpace::ControlsForHitbox(sf::Event& event, sf::RenderWindow& window, Co
             case HA_Circle:
             {
                 sf::CircleShape circle(0.5f);
-                circle.setPosition(worldPos);
-                circle.setOrigin(circle.getRadius(), circle.getRadius());
+                sf::Vector2f pozycja = { worldPos.x - 0.5f,worldPos.y - 0.5f };
+                circle.setPosition(pozycja);
                 circle.setFillColor(sf::Color::Color(153, 241, 94, 126));
                 sf::Vector2f offset = circle.getPosition() - Elements.getField(ElementSelected).GetPosition();
                 sf::Vector2f startsize = Elements.getField(ElementSelected).GetSize();
@@ -663,10 +670,10 @@ void MainSpace::ControlsForHitbox(sf::Event& event, sf::RenderWindow& window, Co
             case HA_Rectangle:
             {
                 sf::RectangleShape rectangle({ 0.5f,0.5f });
-                rectangle.setPosition(worldPos);
+                sf::Vector2f pozycja = {worldPos.x - 0.25f,worldPos.y - 0.25f};
+                rectangle.setPosition(pozycja);
                 rectangle.setFillColor(sf::Color::Color(153, 241, 94, 126));
 
-                rectangle.setOrigin({ rectangle.getSize().x / 2,rectangle.getSize().y / 2 });
                 sf::Vector2f offset = rectangle.getPosition() - Elements.getField(ElementSelected).GetPosition();
                 sf::Vector2f startsize = Elements.getField(ElementSelected).GetSize();
                 Elements.getField(ElementSelected).AddRectangle(rectangle, offset, startsize);
@@ -679,7 +686,6 @@ void MainSpace::ControlsForHitbox(sf::Event& event, sf::RenderWindow& window, Co
                 triangle.setPosition(worldPos);
                 triangle.setFillColor(sf::Color::Color(153, 241, 94, 126));
 
-                triangle.setOrigin(triangle.getRadius(), triangle.getRadius());
                 sf::Vector2f offset = triangle.getPosition() - Elements.getField(ElementSelected).GetPosition();
                 sf::Vector2f startsize = Elements.getField(ElementSelected).GetSize();
                 Elements.getField(ElementSelected).AddPolygon(triangle, offset, startsize);

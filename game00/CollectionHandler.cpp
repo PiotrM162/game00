@@ -107,6 +107,7 @@ void CollectionHandler::saveCollection(FieldsColletction collection)
 			hitboxIndex++;
 		}
 		js[indexS]["hitboxCount"] = hitboxIndex;
+		index++;
 	}
 	writer << js;
 	writer.close();
@@ -163,7 +164,7 @@ void CollectionHandler::loadCollection(FieldsColletction& collection)
 
 				sf::CircleShape circle(radius);
 				circle.setPosition({ 0,0 });
-				circle.setOrigin({ 0.5f,0.5f });
+				//circle.setOrigin({ 0.5f,0.5f });
 				circle.setFillColor(sf::Color::Color(153, 241, 94, 126));
 
 				temField.AddPolygon(circle, { offsetX,offsetY }, { startSizeX,startSizeY });
@@ -185,7 +186,7 @@ void CollectionHandler::loadCollection(FieldsColletction& collection)
 				sf::RectangleShape rectangle({ sizeX,sizeY });
 				rectangle.setPosition({ 0,0 });
 				rectangle.setFillColor(sf::Color::Color(153, 241, 94, 126));
-				rectangle.setOrigin(0.25f, 0.25f);
+				//rectangle.setOrigin(0.25f, 0.25f);
 				temField.AddRectangle(rectangle, { offsetX,offsetY }, { startSizeX,startSizeY });
 			}
 			else if(type == irregular)
@@ -198,8 +199,6 @@ void CollectionHandler::loadCollection(FieldsColletction& collection)
 
 				float scaleX = item.value()[hitbox][std::to_string(i)][irregular][scale]["x"].get<float>();
 				float scaleY = item.value()[hitbox][std::to_string(i)][irregular][scale]["y"].get<float>();
-
-				// trzeba dokoñczyæ dodaæ jakieœ podpisanie kropek i odczytpo tych podpisaniach 
 
 				int in = item.value()[hitbox][std::to_string(i)][irregular]["elements"].get<int>();
 				 
